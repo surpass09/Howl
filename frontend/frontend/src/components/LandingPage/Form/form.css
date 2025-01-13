@@ -1,0 +1,100 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Modal Background */
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Ensure modal is on top */
+  }
+  
+  /* Modal Container */
+
+  /* Heading */
+  .modal-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Close Button (X) */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    color: #862828;
+    cursor: pointer;
+  }
+  
+  .close-btn:hover {
+    color: #d4b6e4; /* Light purple for hover effect */
+  }
+  
+  /* Form Styling */
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Form Labels */
+  form label {
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #d4b6e4; /* Light purple */
+    text-align: left;
+  }
+  
+  /* Input Styling */
+  form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: #d4b6e4; /* Light purple for inputs */
+    color: #5e4b8b; /* Darker purple for text */
+  }
+  
+  form input:focus {
+    outline: none;
+    background-color: #fff;
+    border: 2px solid #5e4b8b;
+  }
+  
+  /* Submit Button */
+  button[type="submit"] {
+    padding: 10px;
+    background-color: #5e4b8b; /* Purple button */
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #4a3b77; /* Slightly darker purple */
+  }
+  
+  /* Close Button Hover Effect */
+  .close:hover,
+  .close:focus {
+    color: #1d0828; /* Light purple for close button hover effect */
+    cursor: pointer;
+  }
+  

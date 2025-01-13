@@ -1,0 +1,79 @@
+/* LandingPage.css */
+
+/* General Body Style */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+/* Hero Section */
+.landing-container {
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #361354, #4b1c6d); /* Darker Purple Gradient */
+  color: white;
+  padding: 100px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.hero-content {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  background-color: #ffffff;
+  color: #4b1c6d; /* Darker Purple Button Text */
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background-color: #3c135a; /* Darker Purple on Hover */
+  color: white;
+}
+
+/* Features Section */
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 20px;
+  background-color: #f8f8f8;
+}
+
+.feature-item {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 200px;
+}
+
+.feature-item h3 {
+  color: #391057; /* Darker Purple Headings */
+  margin-bottom: 20px;
+}
+
+.feature-item p {
+  font-size: 1rem;
+}
