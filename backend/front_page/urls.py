@@ -1,6 +1,7 @@
 from django.urls import path
-from .views import create_profile
+from .views import create_user, create_profile
 
 urlpatterns = [
-    path('create-profile/', create_profile, name='create-profile'),
+    path('api/create-user/', create_user, name='create_user'),
+    path('api/create-profile/', create_profile, name='create_profile'),
 ]

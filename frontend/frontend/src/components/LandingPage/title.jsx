@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import './title.css';
 
 // Import all banner images
-import photo1 from './Photos/friends.jpeg';
-import photo2 from './Photos/friends2.jpeg';
-import photo3 from './Photos/uw_sign.jpeg';
-import asianFriends from './Photos/asian_friends.jpeg';
-import asianGirls from './Photos/asian_girls.jpeg';
-import friendGroup2 from './Photos/friend_group2.jpeg';
-import gayFriends from './Photos/gay.jpeg';
-import girlFriends from './Photos/girl_friends.jpeg';
+import photo1 from '../Photos/friends.jpeg';
+import photo2 from '../Photos/friends2.jpeg';
+import photo3 from '../Photos/uw_sign.jpeg';
+import asianFriends from '../Photos/asian_friends.jpeg';
+import asianGirls from '../Photos/asian_girls.jpeg';
+import friendGroup2 from '../Photos/friend_group2.jpeg';
+import gayFriends from '../Photos/gay.jpeg';
+import girlFriends from '../Photos/girl_friends.jpeg';
 
 // Import FormPage Component
-import FormPage from './Form/form.jsx'; // Make sure to adjust the path
+import FormPage from '../Form/form.jsx'; // Make sure to adjust the path
 
 function Title() {
   const [showForm, setShowForm] = useState(false); // State to toggle form visibility

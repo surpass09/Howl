@@ -28,6 +28,8 @@ SECRET_KEY = 'django-insecure-9$@o*l=4sugjr^d$wd&uc6_2@g*@hd%+cmi&xcb18z_hm&(0$h
 DEBUG = True
 
 ALLOWED_HOSTS = []
+CORS_ALLOW_ALL_ORIGINS = True
+
 
 MEDIA_URL = '/profile_picture/'  # URL to access media files in the browser
 MEDIA_ROOT = BASE_DIR / 'media'  # Physical location where media files will be stored
@@ -41,7 +43,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'front_page'
+    'front_page',
+    'rest_framework'
 ]
 
 MIDDLEWARE = [
@@ -52,6 +55,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware'
 ]
 
 ROOT_URLCONF = 'main.urls'
