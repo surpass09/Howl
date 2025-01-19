@@ -1,0 +1,131 @@
+/* Resetting default margins and paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and global styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f1f1f1; /* Soft light background */
+  color: #333; /* Dark text for contrast */
+  margin: 0;
+  padding: 0;
+}
+
+/* Main landing page container */
+.landing-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #6a1b9a, #8e24aa); /* Purple gradient background */
+}
+
+/* Content section */
+.content {
+  text-align: center;
+  z-index: 10;
+  padding: 20px;
+}
+
+.headline {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  animation: fadeIn 1s ease-out;
+  letter-spacing: 2px;
+}
+
+.description {
+  font-size: 1.6rem;
+  color: #f7f7f7;
+  margin-bottom: 30px;
+  opacity: 0.9;
+  line-height: 1.5;
+  animation: fadeIn 1.5s ease-out;
+}
+
+.cta-button {
+  background-color: #ff4081; /* Vibrant pink button */
+  color: white;
+  font-size: 1.3rem;
+  padding: 15px 35px;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  animation: fadeIn 2s ease-out;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #f8f4f6; /* Darker pink on hover */
+  transform: scale(1.1); /* Slight scale on hover for effect */
+}
+
+/* Background shape animations */
+.background-shapes {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #6e1686, #6a1b9a); /* Gradient circle */
+  border-radius: 50%;
+  opacity: 0.15;
+  animation: float 12s ease-in-out infinite;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 180px solid transparent;
+  border-right: 180px solid transparent;
+  border-bottom: 320px solid #ff4081; /* Vibrant triangle */
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.1;
+  animation: float 10s ease-in-out infinite;
+}
+
+/* Keyframe animations for fade-in and floating shapes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(50px, 50px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}

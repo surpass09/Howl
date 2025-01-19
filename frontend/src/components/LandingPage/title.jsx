@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './title.css';
+import LoginButton from '../Login/Login_Button/LoginButton.jsx'
 
 // Import all banner images
 import photo1 from '../Photos/friends.jpeg';
@@ -24,6 +25,9 @@ function Title() {
   const handleCloseModal = () => {
     setShowForm(false); // Close the modal when clicking outside or close button
   };
+
+
+  
 
   return (
     <div>
@@ -51,6 +55,7 @@ function Title() {
             <h1>Welcome to Howl!</h1>
             <p>Find Friends around the University of Washington!</p>
             <button className="cta-btn" onClick={handleButtonClick}>Get Started</button>
+            <LoginButton />
           </div>
         </section>
 
@@ -63,6 +68,9 @@ function Title() {
             </div>
           </div>
         )}
+
+
+        
       </div>
     </div>
   );
