@@ -1,0 +1,171 @@
+/* Navbar container styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #4b2e83; /* Deep purple background */
+  color: #fff;
+  padding: 15px 30px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Logo styling */
+.navbar-logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e0d6f7; /* Light lavender text for contrast */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+}
+
+/* Links container styling */
+.navbar-links {
+  list-style-type: none;
+  display: flex;
+  gap: 30px; /* Increased gap for better spacing */
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+/* Icon link styling */
+.navbar-links li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.2rem; /* Adjusted font size for clean icon look */
+}
+
+.navbar-links li a {
+  color: #e0d6f7; /* Light lavender */
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-links li a:hover {
+  color: #bb86fc; /* Soft purple highlight */
+  transform: scale(1.2); /* Slight zoom effect */
+}
+
+/* Search bar styling */
+.navbar-search {
+  display: flex;
+  gap: 10px;
+}
+
+.navbar-search input {
+  padding: 7px 15px;
+  border: 2px solid #6a1b9a; /* Vibrant purple border */
+  border-radius: 25px;
+  font-size: 1rem;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.navbar-search input:focus {
+  border-color: #bb86fc; /* Soft purple on focus */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Search button styling */
+.navbar-search button {
+  background-color: #6a1b9a; /* Vibrant purple background */
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  padding: 7px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.navbar-search button:hover {
+  background-color: #bb86fc; /* Lighter purple on hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
+
+/* Popup container styling */
+.popup-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  background-color: #333;
+  color: white;
+  transition: right 0.3s ease-in-out;
+  z-index: 1000; /* Ensure it appears above other content */
+}
+
+.popup-content {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.popup-content h3 {
+  margin-bottom: 20px;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.popup-content button:hover {
+  background-color: #f8f4f6;
+}
+
+/* Popup styles */
+.chat-popup {
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+}
+
+.popup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popup-content button {
+  margin-top: 10px;
+  background-color: #f44336;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.popup-content button:hover {
+  background-color: #d32f2f;
+}
+
+/* General styling for the icon links */
+.icon-link {
+  font-size: 2rem; /* Adjust size as needed */
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Bubble-up effect on hover */
+.icon-link:hover {
+  transform: scale(1.2); /* Slightly increase size */
+  color: #00bcd4; /* Optional: Change color on hover */
+}

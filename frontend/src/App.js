@@ -4,6 +4,7 @@ import Home from './components/LandingPage/title.jsx'; // Replace with your actu
 import Form from './components/Form/form.jsx'; 
 import Profile from './components/Profile/profile.jsx'
 import LoginPage from './components/Login/Login_Form/LoginPage.jsx'
+import Paw from './components/PawPage/Paw.jsx'
 
 function App() {
   return (
@@ -13,6 +14,8 @@ function App() {
         <Route path="/form" element={<Form />} />
         <Route path="/profile" element={<Profile />} /> {/* Success page route */}
         <Route path="/login" element={<LoginPage />}></Route>
+        <Route path="/paw" element={<Paw />}></Route>
+        <Route path="home" element={<Profile />}></Route>
       </Routes>
     </Router>
   );
