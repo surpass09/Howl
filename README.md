@@ -48,16 +48,14 @@ Every day, updates are made to improve the app's usability and features based on
 ## 📸 Screenshots  
 
 ### Landing Page  
-![Landing Page](./assets/landing-page.png)  
-*A clean and welcoming design that sets the tone for the app.*  
+<img width="1267" alt="Screenshot 2025-02-25 at 12 57 49 PM" src="https://github.com/user-attachments/assets/6bbddbc4-bd97-474e-934d-15a2b1bd6056" />
 
-### User Profile Page  
-![User Profile](./assets/user-profile.png)  
-*Showcase your personality with a customizable profile.*  
 
-### Swipe UI  
-![Swipe Interface](./assets/swipe-interface.png)  
-*Discover and connect with people seamlessly.*  
+### Login Page
+<img width="1237" alt="Screenshot 2025-02-25 at 12 57 59 PM" src="https://github.com/user-attachments/assets/aef68e70-e383-4891-8c56-61ddfa7cd860" />
+
+
+
 
 ---
 
